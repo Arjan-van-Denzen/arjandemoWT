@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function mijnfunctie(){
+            var getal = 10;
+            // if(getal == 10){
+            //     console.log("blauw")
+            // }else{
+            //     console.log("rood")
+            // }
+            // for( let x = 0 ; x < 10 ; x += 1){
+            //     console.log("rondje "+x)
+            // }
+            var voornaam = document.getElementById("invoerveld").value
+            var uitvoer = document.getElementById("uitvoer")
+            if(voornaam == "Joost"){
+                uitvoer.innerHTML = "Ga weg " + voornaam;
+                uitvoer.style.backgroundColor = "red";
+            }else{
+                uitvoer.innerHTML = "Welkom, " + voornaam + "!";
+                uitvoer.style.backgroundColor = "green";
+            }
+            voornaam = ""
+        }
+    </script>
+</head>
+<body>
+    <input id="invoerveld">
+    <button onclick="mijnfunctie()">Klik hier</button>
+    <div id="uitvoer"></div>
+</body>
+</html>
