@@ -1,0 +1,1 @@
+Dit is een nieuw tekstdocument dat ik lokaal heb toegevoegd na het klonen van de online repository.
